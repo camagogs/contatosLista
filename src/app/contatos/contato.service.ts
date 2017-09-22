@@ -6,8 +6,8 @@ import { Contato } from './contato.model';
 
 export class ContatoService{
 
-    getContatos(): Contato[]{
-         return CONTATOS;
+    getContatos(): Promise<Contato[]>{
+         return Promise.resolve(CONTATOS);
     }
 
 
